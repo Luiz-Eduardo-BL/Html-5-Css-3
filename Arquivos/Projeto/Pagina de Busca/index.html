@@ -9,24 +9,41 @@
             content: '';
             width: 20px;
             height: 20px;
-            background: url(/home/lima/Documentos/HtmlCss/Arquivos/Projeto/Pesquisa/menu-button-of-three-horizontal-lines.svg) no-repeat left center;
+            background: url(/home/lima/Documentos/Html_Css/Arquivos/Projeto/Pesquisa/menu-button-of-three-horizontal-lines.svg) no-repeat left center;
             position: absolute;
             left: 0px;
             top: 0px;
         }
     </style>
-</head>
+</head> 
 <body>
     <header class="header page">
         <div class="container">
             <div class="primeiro terco">
                 <a href="https://clubedeescritores.com" title="Pagina inicial - \Clube de Escritores" class="header logo">
-                    <img src="/home/lima/Documentos/Html & Css/Arquivos/Projeto/Pesquisa/51200780.jpeg" alt="Logo Clube dos Escritores">
+                    <img src="/home/lima/Documentos/Html_Css/Arquivos/Projeto/Pesquisa/51200780.jpeg" alt="Logo Clube dos Escritores">
                 </a>
                 <div class="categorias d-md-block d-none">
                     ::before
                     "categorias"
                 </div>
+            </div>
+            <div class="segundo terco">
+                <div class="header_busca">
+                    <form action="/books/search" method="GET">
+                        <select id="where" name="where">
+                            <option value="books" selected="selected">Livros</option>
+                            <option value="autores">Autores</option>
+                        </select>
+                        <input type="text" name="what" placeholder="Pesquisar por título ou autor" required="required" value="poemas">
+                        <button type="submit"></button>
+                    </form>
+                </div>
+            </div>
+            <div class="terceiro terco">
+                <a href="/#publish" title="Publique seu livro" class="header-link header-link--publish">Publique sua Produção</a>
+                <a href="/login" title="Entre ou Cadastre-se" class="header-access">
+                    <br>Entre ou <br>Cadastre-se</a>
             </div>
         </div>
     </header>
