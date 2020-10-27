@@ -4,31 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Busca- Clube de Escritores</title>
-    <style>
-        .categorias :before {
-            content: '';
-            width: 20px;
-            height: 20px;
-            background: url(/home/lima/Documentos/Html_Css/Arquivos/Projeto/Pesquisa/menu-button-of-three-horizontal-lines.svg) no-repeat left center;
-            position: absolute;
-            left: 0px;
-            top: 0px;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="Busca.css"/>
 </head> 
 <body>
-    <header class="header page">
+    <header class="header_page">
         <div class="container">
-            <div class="primeiro terco">
-                <a href="https://clubedeescritores.com" title="Pagina inicial - \Clube de Escritores" class="header logo">
-                    <img src="/home/lima/Documentos/Html_Css/Arquivos/Projeto/Pesquisa/51200780.jpeg" alt="Logo Clube dos Escritores">
+            <div id="primeiro_terco">
+                <a href="https://clubedeescritores.com" title="Pagina inicial - \Clube de Escritores">
+                    <img id="logo" src="https://raw.githubusercontent.com/Luiz-Eduardo-BL/Html-5-Css-3/main/Arquivos/Projeto/Pagina%20de%20Busca/51200780.jpeg" alt="Logo Clube dos Escritores">
                 </a>
                 <div class="categorias d-md-block d-none">
                     ::before
                     "categorias"
                 </div>
             </div>
-            <div class="segundo terco">
+            <div id="segundo_terco">
                 <div class="header_busca">
                     <form action="/books/search" method="GET">
                         <select id="where" name="where">
@@ -40,7 +30,7 @@
                     </form>
                 </div>
             </div>
-            <div class="terceiro terco">
+            <div id="terceiro_terco">
                 <a href="/#publish" title="Publique seu livro" class="header-link header-link--publish">Publique sua Produção</a>
                 <a href="/login" title="Entre ou Cadastre-se" class="header-access">
                     <br>Entre ou <br>Cadastre-se</a>
